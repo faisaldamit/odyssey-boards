@@ -2,28 +2,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0%;
 }
-.navbar {
+.split_nav {
     width: 100%;
-    background-color: #27374D;
+    background-color: transparent;
     height: 80px;
+    position: absolute;
     display: flex;
     align-items: center;
 }
-.navbar > div{
-    width :50px;
+.pic{
+    width:60px;
     padding: 20px;
-/* background-image: ; */
+    /* margin-top: 15px; */
 }
-.navbar > div > a{
+.split_nav > div {
+    /* width: 50px; */
+    padding: 20px;
+    /* background-image: ; */
+}
+.split_nav > a {
     text-decoration: none;
+    width: 50px;
+    padding: 20px;
     color: white;
     text-align: center;
-   
 }
-.navbar > div:hover {
-    background-color: #526D82;
+.split_nav > a:hover {
+    background-color: darkgrey;
+    opacity: 0.5;
     transition-duration: 500ms;
     border-radius: 5px;
     cursor: pointer;
 }
-
+.navbar{
+    width: 100%;
+    background-color:black;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.cart_search{
+    width: 70px;
+    right: 5%;
+    margin: 20px;
+    display: flex;
+    position: absolute;
+    gap: 10px;
+}
+.cart_search> span{
+    background-color: transparent;
+}
+.split_nav > div:hover {
+    /* background-color: black;
+    opacity: 0.5;
+    transition-duration: 500ms;
+    border-radius: 5px; */
+    cursor: pointer;
+}
