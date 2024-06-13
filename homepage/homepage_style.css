@@ -1,67 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0%;
+  font-family: Arial, sans-serif;
+  margin: 0%;
 }
 .split_nav {
-    width: 100%;
-    background-color: transparent;
-    height: 80px;
-    position: absolute;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  background-color: transparent;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  align-items: center;
 }
-.pic{
-    width:60px;
-    padding: 20px;
-    /* margin-top: 15px; */
+.pic {
+  width: 60px;
+  padding: 20px;
+  /* margin-top: 15px; */
 }
 .split_nav > div {
-    /* width: 50px; */
-    padding: 20px;
-    /* background-image: ; */
+  /* width: 50px; */
+  padding: 20px;
+  /* background-image: ; */
 }
 .split_nav > a {
-    text-decoration: none;
-    width: 50px;
-    padding: 20px;
-    color: white;
-    text-align: center;
+  text-decoration: none;
+  width: 50px;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 .split_nav > a:hover {
-    background-color: darkgrey;
-    opacity: 0.5;
-    transition-duration: 500ms;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: darkgrey;
+  opacity: 0.5;
+  transition-duration: 500ms;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.navbar{
-    width: 100%;
-    background-color:transparent;
-    height: 80px;
-    position: absolute;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  height: 80px;
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
-.cart_search{
-    width: 70px;
-    right: 5%;
-    margin: 20px;
-    display: flex;
-    position: absolute;
-    gap: 10px;
+.cart_search {
+  width: 70px;
+  right: 5%;
+  margin: 20px;
+  display: flex;
+  position: absolute;
+  gap: 10px;
 }
-.cart_search> span{
-    background-color: transparent;
+.cart_search > span {
+  background-color: transparent;
 }
 .split_nav > div:hover {
-    /* background-color: black;
+  /* background-color: black;
     opacity: 0.5;
     transition-duration: 500ms;
     border-radius: 5px; */
-    cursor: pointer;
+  cursor: pointer;
 }
-.material-symbols-outlined{
-    background-color: transparent;
-    font-size: 20px;
+.material-symbols-outlined {
+  background-color: transparent;
+  font-size: 20px;
 }
