@@ -3,12 +3,14 @@ const images = Array.from(slides);
 let slideindex = 0  ;
 let intervalid = null ;
 document.addEventListener("DOMContentLoaded",startslide);
-document.addEventListener("DOMContentLoaded",showslide);
+// document.addEventListener("DOMContentLoaded",showslide);
+    intervalid = setInterval( NextSlide, 6000);
+
 function startslide(){
     if (images.length > 0 ){
     images[slideindex].classList.add("displayslide");
     }
-    intervalid = setInterval( NextSlide, 6000);
+    // intervalid = setInterval( NextSlide, 6000);
     
 }
 function showslide() {
@@ -23,7 +25,7 @@ function showslide() {
         image.classList.remove("displayslide");
     }
     images[slideindex].classList.add("displayslide");
-    intervalid = setInterval( NextSlide, 6000);
+    // intervalid = setInterval( NextSlide, 6000);
 }
 function PrevSlide(){
     slideindex-- ;
