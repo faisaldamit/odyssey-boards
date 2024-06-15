@@ -8,34 +8,39 @@ body {
   height: 80px;
   position: absolute;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
 }
-.pic {
-  width: 60px;
-  padding: 20px;
+.pic > img{
+  width: 45px;
+  text-align: center;
 }
 .split_nav > div {
-  padding: 20px;
+  padding: 30px;
 }
-.split_nav > a {
+.link > a {
   text-decoration: none;
-  width: 50px;
+  width: 60px;
   padding: 20px;
   color: white;
   text-align: center;
 }
-.split_nav > a:hover {
+.link > a:hover {
   background-color: darkgrey;
   opacity: 0.5;
   transition-duration: 500ms;
   border-radius: 5px;
   cursor: pointer;
+  padding: 20px;
 }
 .navbar {
   width: 100%;
   background-color: transparent;
   height: 80px;
-  position: absolute;
+  position: sticky;
+  top: 0%;
+  display: flex;
 }
 .cart_search {
   width: 70px;
@@ -45,15 +50,11 @@ body {
   position: absolute;
   gap: 10px;
 }
-/* .cart_search > span {
-  background-color: transparent;
-} */
+
 .split_nav > div:hover {
   cursor: pointer;
 }
-/* .material-symbols-outlined {
-  background-color: transparent;
-  font-size: 20px; */
+
 
 .sidebar{
   position: fixed;
@@ -88,8 +89,9 @@ body {
 .displayBar {
   display: flex;
 }
+/* for making our sidebar responsive and adapted to tablette and smartphone */
 @media (max-width : 800px){
-  .split_nav > a{
+  .link{
     display: none;
   }
   .cart_search> a{
@@ -103,7 +105,7 @@ body {
   }
 }
 @media (max-width : 400px){
-  .split_nav > a{
+  .link{
     display: none;
   }
   .cart_search> a{
@@ -112,4 +114,31 @@ body {
   .sidebar{
     width: 100%;
   }
+}
+.subtitle{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-right: 0%; */
+}
+.subtitle > h2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: Playwrite IS;
+  margin-left: 25%;
+}
+
+.subtitle> a{
+  text-decoration: none;
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 5%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
