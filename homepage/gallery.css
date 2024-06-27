@@ -1,0 +1,36 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2%;
+    padding: 10px;
+    margin: 3%;
+  }
+  
+  .galleryItem {
+    overflow: hidden;
+    /* position: relative; */
+  }
+  
+  h2{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 3%;
+  }
+  
+  .galleryItem img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .galleryItem:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }

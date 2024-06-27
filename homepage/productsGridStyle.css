@@ -17,12 +17,17 @@
 }
 .gallerySidebuttons {
   width: 100%;
-  top: 50%;
+  /* top: 50%; */
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
   justify-content: space-between;
-  position: absolute;
+  /* position: relative;     */
 }
-.row {
-  position: relative;
+.row{
+    margin: 2%;
+}
+.gallerySidebuttons > button{
+    top: 70%;
+    /* position: absolute; */
 }

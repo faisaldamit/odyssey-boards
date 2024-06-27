@@ -1,6 +1,6 @@
 
 const SideBar = document.getElementById("barrier");
-const navbar = document.getElementById("navibar");
+// const navbar = document.getElementById("navibar");
 function showSidebar(){
     SideBar.classList.add("displayBar");
 
