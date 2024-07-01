@@ -15,9 +15,10 @@ body {
   }
 
   .split_nav> img{
-    width :150px;
+    /* width :; */
     height: 80px;
     margin :5%;
+    margin-left: 10%;
     margin-top: 0%;
 
   }

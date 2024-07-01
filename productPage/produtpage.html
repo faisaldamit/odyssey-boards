@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="productPageStyle.css" />
+    <link rel="stylesheet" href="imageDisplayer.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -73,7 +74,73 @@
         </span>
       </div>
     </div>
-    
+    <div class="container text-center" id="productDetails">
+      <div class="row">
+        <div class="col-sm-6" id="imgGallery">
+          <div class="scrolldownPics">
+
+            <div class="imgs1">
+              <img
+                src="product/product 1.jpg"
+                class="img-thumbnail"
+                alt="product1"
+              />
+              <img
+                src="product/product 2.jpg"
+                class="img-thumbnail"
+                alt="product2"
+              />
+              <img
+                src="product/product 3.jpg"
+                class="img-thumbnail"
+                alt="product3"
+              />
+              <img
+                src="product/product 4.webp"
+                class="img-thumbnail"
+                alt="product4"
+              />
+              <img
+                src="product/product 5.jpeg"
+                class="img-thumbnail"
+                alt="product5"
+              />
+              <img
+                src="product/product 6.webp"
+                class="img-thumbnail"
+                alt="product6"
+              />
+            </div>
+          </div>
+          <div class="imagecontainer" id="imgContainer">
+            <img src="product/product 1.jpg" class="img-fluid" alt="product1" />
+            <img src="product/product 2.jpg" class="img-fluid" alt="product2" />
+            <img src="product/product 3.jpg" class="img-fluid" alt="product3" />
+            <img
+              src="product/product 4.webp"
+              class="img-fluid"
+              alt="product4"
+            />
+            <img
+              src="product/product 5.jpeg"
+              class="img-fluid"
+              alt="product5"
+            />
+            <img
+              src="product/product 6.webp"
+              class="img-fluid"
+              alt="product6"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6" id="productDetails-1">
+          <h1 class="display-5">Your Product Here</h1>
+          <span><s>199.00 USD </s></span>
+          <span><strong>99.00 USD</strong></span>
+          <p><em>Shipping is free except some cases.</em></p>
+        </div>
+      </div>
+    </div>
 
     <script src="sidebar.js"></script>
     <script
