@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0%;
+  }
+  .split_nav {
+    
+    background-color: transparent;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .split_nav > div {
+    padding: 30px;
+  }
+  .link > a {
+    text-decoration: none;
+    width: 60px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+  }
+  .link > a:hover {
+    background-color: darkgrey;
+    opacity: 0.5;
+    transition-duration: 500ms;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .navbar {
+    width: 100%;
+    background-color: transparent;
+    height: 80px;
+    position: sticky;
+    top: 0%;
+    display: flex;
+  }
+  .cart_search {
+    width: 70px;
+    right: 5%;
+    margin: 20px;
+    display: flex;
+    position: absolute;
+    gap: 10px;
+  }
+  
+  .split_nav > div:hover {
+    cursor: pointer;
+  }
+  
+  
+  .sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: #83B4FF;
+    backdrop-filter: blur(10px);
+    right: 0;
+    top: 0;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+    box-shadow:-10px 0 10px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .sidebar> a{
+    text-decoration: none;
+    width: 100%;
+    padding: 10%;
+    color: black;
+    text-align: left;
+  }
+  .sidebar> a:hover{
+    background-color: rgba(120, 118, 118, 0.2);
+  }
+  .sidebar> span{
+    margin : 10%;
+  }
+  
+  .displayBar {
+    display: flex;
+  }

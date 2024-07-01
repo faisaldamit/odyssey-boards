@@ -24,7 +24,7 @@ body {
   text-decoration: none;
   width: 60px;
   padding: 20px;
-  color: white;
+  color: rgba(0, 0, 0, 0.659);
   text-align: center;
 }
 .link > a:hover {
