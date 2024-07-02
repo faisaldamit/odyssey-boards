@@ -114,7 +114,11 @@ body {
     .cart_search> a{
       display: none;
     }
-  
+    .cart_search{
+      margin: 0%;
+      justify-content: flex-end;
+    }
+   
   }
   @media (min-width : 800px){
     #menu {
@@ -130,6 +134,10 @@ body {
     }
     .cart_search> a{
       display: none;
+    }
+    .cart_search{
+      margin: 0%;
+      justify-content: flex-end;
     }
    
   }

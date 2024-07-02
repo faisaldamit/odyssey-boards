@@ -1,5 +1,5 @@
 .scrolldownPics {
-  width: 200px; /* Set the desired width */
+  width: 35%; /* Set the desired width */
   height: 80vh; /* Set the desired height */
   overflow: hidden; /* Hide both vertical and horizontal scrollbars */
   border: 1px solid #ccc; /* Optional: Add a border for better visibility */
@@ -19,7 +19,7 @@
   height: 200px;
 }
 .imagecontainer {
-width: 60%;
+width: 65%;
 border: 1px solid #ccc;
 margin: 5%;
 
@@ -32,4 +32,35 @@ margin: 5%;
 .img-fluid{
   height: 60vh;
   width: 100%;
+}
+@media (max-width: 600px) {
+  .scrolldownPics{
+  display: none;
+  }
+  .col-sm-6{
+    align-items: center;
+    flex-direction: column;
+  }
+  .imagecontainer{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+}
+.price-of-product{
+  width:100%;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3%;
+}
+#buying-btn{
+  width: 100%;
+  background-color: #071952;
+  font-size: larger;
+  font-family: playwrite Is;
+}
+#productDetails-1{
+ margin-top: 5%;
 }
