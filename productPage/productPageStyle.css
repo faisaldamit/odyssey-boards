@@ -54,7 +54,7 @@ body {
     width: 100%;
     background-color: transparent;
     height: 100px;
-    position: sticky;
+    /* position: f; */
     top: 0%;
     display: flex;
   }
