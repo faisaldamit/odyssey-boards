@@ -17,7 +17,7 @@ body {
   /* width :; */
   height: 80px;
   margin: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 0%;
 }
 .split_nav {
@@ -103,7 +103,7 @@ body {
 /* for making our sidebar responsive and adapted to tablette and smartphone */
 @media (max-width: 800px) {
 .navbar{
-
+    padding-top: 2%;
     }
 .link {
     display: none;
@@ -118,9 +118,9 @@ body {
   .split_nav > img {
     width :60px;
     height: 50px;
-    margin: 2%;
-    margin-left: 10%;
-    margin-top: 0%;
+    margin: 5%;
+    /* margin-left: 10%; */
+    /* margin-top: 0%; */
   }
 }
 @media (min-width: 800px) {
@@ -136,7 +136,7 @@ body {
     display: none;
   }
   .cart_search > a {
-    
+
     display: none;
   }
   .cart_search {
