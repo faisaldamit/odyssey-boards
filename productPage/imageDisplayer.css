@@ -63,7 +63,7 @@
  background-color: #08268bdf;
  transition-duration: 0.3s;
  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
- cursor: grab;
+ cursor: pointer;
 }
 #productDetails-1 {
   margin-top: 5%;

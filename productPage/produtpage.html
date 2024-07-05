@@ -118,24 +118,24 @@
             </div>
           </div>
           <div class="imagecontainer" id="imgContainer">
-            <img src="product/product 1.jpg" class="img-fluid" alt="product1" />
+            <img src="product/product 1.jpg" id="picture" class="img-fluid" alt="product1" />
           </div>
         </div>
         <div class="col-sm-6" id="productDetails-1">
-          <h1 class="display-5">Your Product Here</h1>
+          <h1 class="display-5" id="product">Your Product Here</h1>
           <div class="price-of-product">
-            <span><s>199.00 USD </s></span>
-
-            <span><strong>99.00 USD</strong></span>
+            <span><s>199.00 USD</s></span>
+            <span id="priceOfProduct"><strong>99.00 USD</strong></span>
           </div>
           <p>
             <u><em>"Shipping is free except some cases."</em></u>
           </p>
           <hr />
           <div class="col-12">
-            <button class="btn btn-primary" id="buying-btn" type="submit">
+            <a href="../Cartpage/cartpage.html"><button class="btn btn-primary" id="buying-btn" type="submit" onclick="addToCart()" >
               Add To Cart
             </button>
+          </a>
           </div>
           <hr />
           <span>Secure checkout with</span>
@@ -271,6 +271,7 @@
 
     <script src="sidebar.js"></script>
     <script src="ratingProduct.js"></script>
+    <script src="productAddToCart.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

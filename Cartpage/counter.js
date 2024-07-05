@@ -1,6 +1,6 @@
 const numberBox = document.getElementById("increment-number");
 let priceOfProduct = document.getElementById("price");
-let numbers = 1; 
+let numbers = 1 ; 
 let intervalid = null ;
 document.getElementById("Subtotale-value").innerHTML= numbers * 199.00;
 function decrementing(){
@@ -16,3 +16,4 @@ function incrementing(){
     numberBox.innerHTML= numbers;
     document.getElementById("Subtotale-value").innerHTML= numbers * 199.00;
 }
+document.addEventListener("DOMContentLoaded", cartMessage());
