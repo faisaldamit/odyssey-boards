@@ -1,26 +1,23 @@
 var product = {
-    name: document.getElementById('product').textContent,
-    image: document.getElementById('picture').src,
-    price: document.getElementById('priceOfProduct').textContent
+	name: document.getElementById('product').textContent,
+	image: document.getElementById('picture').src,
+	price: document.getElementById('priceOfProduct').textContent,
 };
 function addToCart() {
-    
-    
-    localStorage.setItem('cartItem', JSON.stringify(product));
-    window.location.href = '../Cartpage/cartpage.html';
+	localStorage.setItem('cartItem', JSON.stringify(product));
+	window.location.href = '../Cartpage/cartpage.html';
 }
-document.addEventListener('DOMContentLoaded', function() {
-    console.log(document.getElementById('productImage').src);
+document.addEventListener('DOMContentLoaded', function () {
+	console.log(document.getElementById('productImage').src);
 });
 
-
 function displayCart() {
-    const cartItems = document.getElementById('checkout-part');
-    product = JSON.parse(localStorage.getItem('cartItem'));
+	const cartItems = document.getElementById('checkout-part');
+	product = JSON.parse(localStorage.getItem('cartItem'));
 
-    if (product) {
-        const item = document.createElement('div');
-            item.innerHTML = `
+	if (product) {
+		const item = document.createElement('div');
+		item.innerHTML = `
    
     <div class="col-sm-6"></div>
         <div class="col-sm-3"><p class="chackout-part-of-cart">Quantity</p></div>
@@ -56,16 +53,11 @@ function displayCart() {
         </button>
         </div>
         </div>
-        <hr>`
-    ;
-    cartItems.appendChild(item);
-     } else{
-        cartItems.innerHTML=`<p class="empty-cart-message">Your cart is currently empty.</p>`;
-     }
-    }
-
-    // Check if we're on the cart page
-if (window.location.pathname.includes('../Cartpage/cartpage.html')) {
-    displayCart();
+        <hr>`;
+		cartItems.appendChild(item);
+	} else {
+		cartItems.innerHTML = `<p class="empty-cart-message">Your cart is currently empty.</p>`;
+	}
 }
+
 //    document.addEventListener("DOMContentLoaded",displayCart());
