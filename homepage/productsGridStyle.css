@@ -31,3 +31,9 @@
     top: 70%;
     /* position: absolute; */
 }
+.gallerySidebuttons> img{
+  width: 40%;
+  height: 100%;
+/* position: absolute; */
+
+}
