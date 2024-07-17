@@ -29,17 +29,16 @@
 	const l3ir9Sami = arr.filter((x) => {
 		return x.name !== 'Mamadou';
 	});
-
-	console.log(l3ir9Sami);
+	// console.log(l3ir9Sami);
 
 	const names = l3ir9Sami.map((x) => {
 		const name = x.name;
 		const age = x.age;
 
 		return name + ' ' + age;
-	});
+	}); 
 
-	console.log(names);
+	// console.log(names);
 }
 
 // -- Spread operator --
@@ -48,7 +47,7 @@
 	list.push(4);
 	const list2 = [0, ...list, -2, ...list];
 
-	console.log(list2);
+	// console.log(list2);
 
 	const obj = { brand: 'Fiat', color: 'Blue', model: 'Dobolo' };
 	let obj2 = { color: 'Red', ...obj };
@@ -64,5 +63,17 @@
 	const list = [1, 2, 3];
 	const [, , three] = list;
 
-	console.log(three);
+	// console.log(three);
 }
+const tab = [0, 1, 2, 0, 0, 3, 4, 0, 5];
+
+ const ghayrmoun3adim = tab.filter((x) => {
+	return  x !== 0 ;
+
+	
+ });
+console.log(ghayrmoun3adim);
+const sqrt = ghayrmoun3adim.map((x)=> {
+	return x*x ;
+});
+console.log(sqrt);
